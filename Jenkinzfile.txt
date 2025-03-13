@@ -4,10 +4,9 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/gurumurthy974/day2session.git'
+                git branch: 'main', url: 'https://github.com/AnanyaBinduN/project18.git'
             }
         }
-
         stage('Build with Maven') {
             steps {
                 sh 'mvn clean package'
